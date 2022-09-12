@@ -21,7 +21,7 @@ public class IntroLab {
      * @return A message using the given parameters.
      */
     public static String printLabMessage(String greeting, String name,
-                                  boolean likes_cats, String message) {
+                                         boolean likes_cats, String message) {
         String message_to_print = greeting + "! My name is " + name + "! ";
 
         if (likes_cats) {
@@ -40,6 +40,10 @@ public class IntroLab {
      * As a reference, we've provided the sample method exampleStudent.
      * Make sure you document your method properly!
      */
+
+    public static String lithomps () {
+        return printLabMessage("Hi!", "Thompson Li", true, "Gamers are Coders!");
+    }
 
     /**
      * An example method that calls on printLabMessage.
@@ -60,6 +64,7 @@ public class IntroLab {
          * above. Afterwards: run this file to see the output!
          */
 
+        System.out.println(lithomps());
 
     }
 

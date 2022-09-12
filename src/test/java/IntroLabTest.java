@@ -30,4 +30,12 @@ public class IntroLabTest {
      *       the test results.
      * As a reference, we've included testExampleStudent above.
      */
+
+    @Test(timeout = 10)
+    public void testLithomps() {
+        String expected = "Hi!! My name is Thompson Li! " +
+                "I like cats more than dogs! Gamers are Coders!";
+        String actual = IntroLab.lithomps();
+        assertEquals(expected, actual);
+    }
 }
